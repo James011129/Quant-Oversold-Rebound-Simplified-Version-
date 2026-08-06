@@ -25,10 +25,10 @@ def initialize(context):
     # 核心参数
     g.max_hold = 2  # 最大持仓数量
     g.min_money = 1e8  # 最低成交额1亿
-    g.volume_ratio = 1.3  # 量比阈值（用于确认相对量能放大）
+    g.volume_ratio = 1.5  # 量比阈值（用于确认相对量能放大）
 
     # 定义仓位分配权重 (7:3)
-    g.position_weights = [0.7, 0.3]
+    g.position_weights = [0.9, 0.1]
 
     # 运行频率设定：开盘时运行
     run_daily(trade, time='open')
